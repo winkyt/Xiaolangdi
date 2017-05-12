@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Xiaolangdi Dam Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--meta data for sharing links on Facebook-->
+    <meta property="og:title" content="A Case Study for Xiaolangdi Dam on Yellow River" />
+    <meta property="og:url" content="http://cdn.rawgit.com/winkyt/storymap/master/index.html" />
+    <meta property="og:description" content="A case study for Geog541 mini project." />
+    <meta property="og:image" content="img/social.png" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+
+    <!--animation-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <!--facebook and info icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--use a better font for this web map-->
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+
+    <link rel="stylesheet" type="text/css" href="dist/storymap.css">
+    <!--add favicon for the web page-->
+    <link rel="shortcut icon" href="img/water.png" type="image/x-icon">
+    <style>
+        .end-background-img {
+            background: url(assets/end.jpg) no-repeat center center fixed;
+        }
+    </style>
+
+    <!--add required libraries-->
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
+
+    <!--story map plugin-->
+    <script src="dist/storymap.js"></script>
+
+    <!-- bing map -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Promise"></script>
+    <script src="http://gmaclennan.github.io/leaflet-bing-layer/leaflet-bing-layer.js"></script>
+
+    <!-- mini globle map -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+    <script src="js/globeminimap.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 main">
+            <section data-scene="overview">
+                <video class="background-fullscreen-setting" playsinline autoplay muted loop>
+                    <source src="assets/yellowriver.mp4" type="video/mp4">
+                </video>
+                <div class= "background-fullscreen-setting text-responsive text-center" >
+                    <h3>A case study of Xiaolangdi on Yellow River</h3>
+                    <h3><small style="color: rgba(102, 178, 255, 0.8)">This Web Map introduces the project of Xiaolangdi Dam in China.</small></h3>
+                </div>
+            </section>
+
+            <section data-scene="yellowriver">
+                <h2>The Mother River -- Yellow River</h2>
+                <p>Yellow River is the second longest river in China, followed by Yangtze River. The Chinese civilization originated in the Yellow River Basin. However, the Yellow River has caused several deadly floods, including the only natural disasters in recorded history to have killed more than a million population. The flood causes by the large amount of fine-grained loess carried by the river from the Loess Plateau, which is continuously deposited along the bottom of its channel. The sedimentation causes natural dams to slowly accumulate. These subaqueous dams were unpredictable and generally undetectable. Eventually, the enormous amount of water has to find a new way to the sea, forcing it to take the path of least resistance. When this happens, it bursts out across the flat North China Plain, sometimes taking a new channel and inundating any farmland, cities or towns in its path. efore modern dams came to China, the Yellow River was extremely prone to flooding. In the 2,540 years from 595 BCE to 1946 CE, the Yellow River has been reckoned to have flooded 1,593 times, shifting its course 26 times noticeably and nine times severely.     </p>
+                <img src="img/history%20.jpg" class="img-responsive" alt="responsive image" alt-text="Chairman Jiang at Site Selection">
+                <p>Sanmenxia dam is the first major flood control project on Yellow River. However, the accumulated sediment pushed too much pressure to the dam. Later, the dam had to be re-engineered and renovated. The failure of Sanmenxia placed the Chinese government at the center of controversy of water management on Yellow River. Later, the government planned the Xiaolangdi project to offset the negative impact from Sanmenxia. </p>
+            </section>
+
+            <section data-scene="history">
+                <h2>Historical Management</h2>
+            </section>
+
+            <section data-scene="construction">
+                <h2>Construction</h2>
+                <p>Eugene is a city of the Pacific Northwest located in the U.S. state of Oregon. It is located at the southern end of the Willamette Valley, near the confluence of the McKenzie and Willamette Rivers, about 50 miles (80 km) east of the Oregon Coast.</p>
+                <p>As of the 2010 census, Eugene had a population of 156,185; it is the second most populous city in the state (after Portland) and the county seat of Lane County. The Eugene-Springfield, Oregon metropolitan statistical area (MSA) is the 146th largest metropolitan statistical area in the US and the third-largest in the state, behind the Portland Metropolitan Area and the Salem Metropolitan Area. The city's population for 2014 was estimated to be 160,561 by the US Census.</p>
+                <p>Eugene is home to the University of Oregon and Lane Community College. The city is also noted for its natural beauty, recreational opportunities (especially bicycling, running/jogging, rafting, and kayaking), and focus on the arts. Eugene's official slogan is "A Great City for the Arts and Outdoors". It is also referred to as the "Emerald City" and as "Track Town, USA". The Nike corporation had its beginnings in Eugene. In 2021, the city will host the 18th Track and Field World Championships.</p>
+            </section>
+
+            <section data-scene="stakeholders">
+                <h2>participants of the project</h2>
+                <p></p>
+            </section>
+
+            <section data-scene="environment">
+                <h2>Environment Impact</h2>
+            <p></p>
+            </section>
+
+            <section data-scene="displacement">
+                <h2>Dam-induced migration</h2>
+                <p></p>
+            </section>
+
+            <section data-scene="government">
+                <h2>The administration</h2>
+            </section>
+
+            <section data-scene="end">
+                <div class= "end-background-img background-fullscreen-setting text-center" >
+                    <br/>
+                    <h3 class="">Thanks for watching!!!</h3>
+                    <h3><small style="color: rgba(169, 169, 169, 0.8)">Download Storymap.js from http://github.com/jakobzhao/storymap</small></h3>
+                </div>
+            </section>
+
+        </div>
+        <!--map div-->
+        <div id="map" class="col-sm-6 col-md-8 sidebar"></div>
+    </div>
+    <!--add a scrolling down arrow-->
+    <div class="animated zoomIn infinite glyphicon glyphicon-menu-down arrow-down"></div>
+    <!--add a navigation bar-->
+    <div class="navbar text-center"></div>
+
+    <!--add a info model -->
+    <div id="loading">
+        <i class="animated zoomIn infinite glyphicon glyphicon-globe"></i>
+    </div>
+
+    <dl>
+        <dt>
+            <!--facebook icon-->
+            <a class="fa fa-facebook-square btn" href="https://facebook.com/sharer.php?u=http://cdn.rawgit.com/jakobzhao/storymap/master/fullpage.html" target="_blank"></a>
+        </dt>
+        <dt>
+            <!--facebook icon-->
+            <a class="fa fa-git-square btn" href="https://github.com/jakobzhao/storymap" style="top:40px" target="_blank"></a>
+        </dt>
+        <dt>
+            <!--info icon-->
+            <i class="fa fa-file-text-o btn" style="top:60px" data-toggle="modal" data-target="#info-modal"></i>
+        </dt>
+    </dl>
+
+    <!--the info page-->
+    <div class="modal fade" id="info-modal" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">About</h4>
+                </div>
+                <div class="modal-body">
+                    <p>This is a web map of Xiaolangdi Dam. It is mainly made as a mini project for a course GEOG 541: International Water Management provided by Oregon State University. The story map library is derived from the storymap plugin for leaflet at <a>http://atlefren.github.io/storymap/</a>, and its functionality relies on both leaflet and Boostrap.</p>
+                    <p><b>storymap.js</b> | Released Date: 02/20/2017 | Version: 2.1 | MIT License </p>
+                    <p><b>Author: Yingqi Tang</b> | College of Earth, Ocean, Atmospheric Science | Oregon State University </p>
+                    <p>The context about Xiaolangdi project from Xiaolangdi Construction and Management Center, Ministry of Water Resource.</p>
+                    <p>The <a src="https://www.youtube.com/watch?v=XQNd1OzfiRQ">background video</a> on the front page was clipped from Youtube. </p>
+                    <p>The favicon image was acquired from <a>http://www.udlcenter.org/advocacy/state/oregon.</a></p>
+                    <p>This story map uses geospatial data from mapbox, Google Earth Engine, Microsoft Bing map, Open Street Maps and Oregon Explorer.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- main javascript -->
+<script type="text/javascript">
+
+    /**
+     * Created by jakob on 4/20/2017.
+     */
+        // Create Legend Contents in html format
+    var county_legend ='<i style="background: lightcoral; opacity: 0.6"></i><p><b>Counties</b></p>';
+    var area_legend = '<i style="background: orange; opacity: 0.5"></i><p><b>Affected Area</b></p>';
+    var urban_legend = '<i style="background: mediumpurple; opacity: 0.5"></i><p><b>Populated Area</b></p>';
+    var river_legend= '<i style="background: lightskyblue; opacity: 1"></i><p><b>River</b></p>';
+
+    // For each layer, the first variable is the layer, the second is the legend. The layer variable can be any kinds of layers that leaflet.js supports.
+    // var layers = {
+    //      'layer1': [layer1, legend1]
+    //      'layer2': [layer2, legend2]
+    //      ...
+    // }
+
+    var layers = {
+        'bing' : [L.tileLayer.bing('AuhiCJHlGzhg93IqUH_oCpl_-ZUrIE6SPftlyGYUvr9Amx5nzA-WqGcPquyFZl4L')],
+        'river': [ L.geoJson.ajax('assets/yriver.geojson',  {
+            color: 'lightskyblue',
+            weight: 2,
+            opacity: 0.8}), river_legend],
+        'urban': [ L.geoJson.ajax('assets/urban.geojson',  {
+            color: 'mediumpurple',
+            weight: 2,
+            opacity: 0.8}), urban_legend],
+        'henan': [ L.geoJson.ajax('assets/area.geojson',  {
+            color: 'orange',
+            weight: 2,
+            opacity: 0.8}), area_legend],
+        'china': [ L.geoJson.ajax('assets/chnad.geojson',  {
+            color: 'red',
+            weight: 2,
+            opacity: 0.3}), county_legend],
+        'satellite': [ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw', {
+            id: 'mapbox.satellite'
+        })]
+    };
+
+
+    var scenes = {
+        overview: {lat: 35.8613901, lng: 80.23771915, zoom: 3, position: 'fullpage', name: 'Cover Page'},
+        yellowriver: {lat: 35.8613901, lng: 80.23771915, zoom: 4, name: 'Yellow River', layers:['china','river']},
+        history: {lat: 34.94140235, lng: 112.0636695, zoom: 10, name: 'Background', layers: ['bing','henan']},
+        construction: {lat: 34.922506, lng: 112.364742, zoom: 15, name: 'Design and Decision' },
+        stakeholders: {lat: 34.922506, lng: 112.364742, zoom: 13, name: 'Stakeholders'},
+        environment: {lat: 34.956820, lng: 112.364993, zoom: 15, name: 'Environment Management'},
+        displacement: {lat: 34.956820, lng: 112.364993, zoom: 10, name: 'Dam-induced migration', layers: ['urban']},
+        government:{lat: 34.922506, lng: 112.0636695, zoom: 11, name: 'Government'},
+        end: {lat: 44, lng: -123.5, zoom: 7, name: 'The End', position: 'fullpage'}
+    };
+
+    $('.main').storymap({
+        scenes: scenes,
+        layers: layers,
+        legend: true, // if you do not want a legend feature, you can simply not define the createLegend function.
+        scale: false,
+        navbar: true,
+
+        createMap: function () {
+            // create a map in the "map" div, set the view to a given place and zoom
+            var map = L.map('map', {zoomControl: false, scrollWheelZoom: false});
+
+            // add an base map, which can be either OSM, mapbox, tilelayer, wmslayer or those designed by yourself.
+            L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+                maxZoom: 18,
+                attribution: '<a href="http://ceoas.oregonstate.edu/profile/zhao/" target="_blank">Bo Zhao</a>',
+                id: 'mapbox.light' // ,detectRetina: true
+            }).addTo(map);
+
+
+            // create a mini globe as the overview map control.
+            var miniMap = new L.Control.GlobeMiniMap({
+                marker:'red',
+                position: 'bottomright'
+            }).addTo(map);
+
+            // hidden the credits, but show in the about page.
+            $(".leaflet-control-attribution").css("display", "none");
+
+            return map;
+        }
+    });
+</script>
+</body>
+</html>
