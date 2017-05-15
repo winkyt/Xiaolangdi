@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "DAM_NAME": "Xiaolangdi", "RIVER": "Huang He", "ALT_RIVER": "Yellow River", "MAIN_BASIN": "Huang He", "NEAR_CITY": "Mengjin", "COUNTRY": "China", "YEAR": 2002, "ALT_YEAR": 2001, "Displacement": "201,400", "MAIN_USE": "Flood control", "LONG_DD": 112.35875, "LAT_DD": 34.924583 }, "geometry": { "type": "Point", "coordinates": [ 112.35875, 34.924583 ] } },
+{ "type": "Feature", "properties": { "DAM_NAME": "Sanmenxia", "RIVER": "Huang He", "ALT_RIVER": "Yellow River", "MAIN_BASIN": "Huang He", "NEAR_CITY": " Sanmenxia", "COUNTRY": "Chian", "YEAR": 1960, "ALT_YEAR": null, "Displacement": " ", "MAIN_USE": "Flood control", "LONG_DD": 111.342083, "LAT_DD": 34.832917 }, "geometry": { "type": "Point", "coordinates": [ 111.342083, 34.832917 ] } }
+]
+}
